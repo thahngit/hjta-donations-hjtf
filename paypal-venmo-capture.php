@@ -99,7 +99,7 @@ try {
     } 
     else if (isset($paypalResult->details) && isset($paypalResult->details[0]) && isset($paypalResult->details[0]->issue)) 
     {
-        hjtaorgLog( 'PAYPAL OTHER NON-RECOVERABLE ERROR ' , "PayPal error processing $_AMT for $sid: " + $paypalResult->details[0]->issue , __FILE__ . ' Line: ' . __LINE__ , "HJTF");
+        hjtaorgLog( 'PAYPAL OTHER NON-RECOVERABLE ERROR ' , "PayPal error processing $_AMT for $sid: " . $paypalResult->details[0]->issue , __FILE__ . ' Line: ' . __LINE__ , "HJTF");
         //will be handled on the front-end
 
         // DATABASE STUFF
